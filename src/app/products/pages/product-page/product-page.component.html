@@ -1,0 +1,15 @@
+<h1>product-page works!</h1>
+
+@if (isProductVisible) {
+<product-price [price]="currentPrice" />
+}
+
+<button
+  class="btn btn-primary me-2"
+  (click)="isProductVisible = !isProductVisible"
+>
+  Toggle
+</button>
+<button class="btn btn-primary me-2" (click)="increasePrice()">
+  increment price
+</button>
